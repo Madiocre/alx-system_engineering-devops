@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head -10 | rev | cut -d '/' -f1 | rev
+ls -A -lt | head -10 
