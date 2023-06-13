@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A -lt | head -10 
+ls -1t | head -10 | xargs -I{} basename "{}"
