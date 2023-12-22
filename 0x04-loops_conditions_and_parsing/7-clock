@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Displays clock using a while loop.
+
+hours=0
+
+while [ $hours -lt 13 ]
+do
+  echo Hour: $hours
+  mins=1
+  while [ $mins -lt 60 ]
+  do
+    echo $mins
+    (( mins++ ))
+  done
+  (( hours++ ))
+done
