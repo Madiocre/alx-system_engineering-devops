@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# List bash only
+# shellcheck disable=SC2009
+
+ps -U root -u root u -H | grep bash

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# List bash only
+
+ps -U bash -u root u -H T bash
