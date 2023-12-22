@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# List Current Processes
+
+ps -U root -u root u -H
