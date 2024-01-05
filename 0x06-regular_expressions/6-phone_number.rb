@@ -3,7 +3,7 @@
 require 'English'
 
 def match_numb(input)
- input.scan(/\d{10}/).each do |match|
+ input.scan(/\b\d{10}\b/).each do |match|
   print match
  end
  puts ''
