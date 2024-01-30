@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+def extract_info(log_entry)
+ sender = log_entry.scan(/from:\s*(\S+)/).flatten.first
+ receiver = log_entry.scan(/to:\s*(\S+)/).flatten.first
+ flags = log_entry.scan(/flags:\s*(\S+)/).flatten.first
+
+ [sender, receiver, flags]
+end
+
+ARGV.each do |arg|
+ puts extract_info(arg).join(",")
+end
