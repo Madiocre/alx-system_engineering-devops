@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Show all IPV4s
+
+ifconfig | grep -Eo "inet ([0-9]*\.){3}[0-9]*" | cut -b 5-
