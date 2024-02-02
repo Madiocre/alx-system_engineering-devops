@@ -1,9 +1,4 @@
 #!/bin/bash
-# Works
 # Display listening sockets
-echo "Active Internet connections (only servers)"
-sudo netstat -tunpl
 
-# Display Active UNIX domain sockets (only servers)
-echo "\nActive UNIX domain sockets (only servers)"
-sudo netstat -xlpn
+netstat -l --program
