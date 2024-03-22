@@ -1,14 +1,5 @@
 # This check for pip then installs flask 2.1.0
-package { 'python3-pip':
-  ensure => installed,
-}
-
 package { 'flask':
-  ensure          => installed,
-  name            => 'python3-flask',
-  provider        => 'pipx',
-  require         => Package['python3-pip'],
-  install_options => [
-    { '--version' => '2.1.0' },
-  ],
+  ensure   => '2.1.0',
+  provider => 'pip3',
 }
