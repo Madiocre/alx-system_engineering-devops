@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# my first server login
+
+ssh-add pubkey
+
+ssh ubuntu@52.72.22.122
